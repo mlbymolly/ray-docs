@@ -43,6 +43,7 @@ The key insight from the paper: most systems have *either* tasks (like Spark/CIE
 1. Clone the repository
 2. `npm install`
 3. `npm run dev`
+4. Open `http://localhost:5173` in your browser
 
 ## Source
 
