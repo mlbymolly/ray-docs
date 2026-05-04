@@ -11,7 +11,7 @@ Modern ML doesn't fit on one machine. Training a large language model, running h
 - **Models outgrew single machines** — LLM training, reinforcement learning simulations, and large-scale data preprocessing all require more compute than any one node can offer. If you can't distribute, you can't build.
 - **Iteration speed is everything** — Distributed execution turns a 12-hour experiment into a 20-minute one. That's the difference between testing 3 ideas a week and 30.
 - **Production serving is inherently parallel** — Inference at scale means handling thousands of concurrent requests, sharding models across GPUs, and batching intelligently. This is a distributed systems problem whether you frame it that way or not.
-- **Resource efficiency** — Ray's dynamic resource allocation ensures you're using every GPU and CPU to capacity, not idling while waiting for the next job.
+- **Resource efficiency** — Ray's dynamic resource allocation ensures you're using every GPU and CPU to capacity, not idling while waiting for the next job. - side note checkout **[https://karpenter.sh/**](https://karpenter.sh/*>)**
 - **Simply a tool to be competitive** - every one has AI models and the question is who can train, serve, scale them effectively. and cost effectively 
 
 **Why Ray in particular:**
