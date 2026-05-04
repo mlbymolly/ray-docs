@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Google+Sans:wght@400;500;700&family=Google+Sans+Text:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+    --font-sans: 'Google Sans Text', 'Inter', sans-serif;
+    --font-display: 'Google Sans', 'Inter', sans-serif;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+    --primary: 214 84% 40%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 214 84% 40%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 214 84% 40%;
+    --chart-1: 214 84% 40%;
+    --chart-2: 261 51% 51%;
+    --chart-3: 153 57% 40%;
+    --chart-4: 37 91% 50%;
+    --chart-5: 4 90% 58%;
+    --radius: 0.375rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Editorial article body text */
+.article-body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: hsl(0 0% 20%);
+  max-width: 720px;
+}
+
+/* Code / math block */
+.math-block {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  background: hsl(0 0% 97%);
+  border: 1px solid hsl(0 0% 88%);
+  border-left: 3px solid hsl(214 84% 40%);
+  border-radius: 0 0.375rem 0.375rem 0;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  color: hsl(0 0% 18%);
+  line-height: 1.7;
+}
+
+/* Thin divider */
+.glow-line {
+  height: 1px;
+  background: hsl(0 0% 88%);
+}
+
+.glow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: hsl(214 84% 40%);
+}
